@@ -1,0 +1,93 @@
+body{font-family: Arial, Helvetica, sans-serif;
+    background: #fafbf8;
+}
+header{text-align: right;
+    padding: .6rem;
+    border-bottom: 1px solid #dddddd;
+}
+.navbar{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+}
+.nav-left a{font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333333;
+}
+.nav-right a{margin-left: 1rem;
+    text-decoration: none;
+}
+.nav-right a:first-of-type{border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: .27em;
+    background-color: #cccccc;
+    color: #5a9968;
+}
+.hero{text-align: center;
+    vertical-align: middle;
+    padding: 10em;
+    border-bottom: 1px solid #dddddd;
+}
+.hero a{border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: .4em;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    background-color: #97b15f;
+    color: #3e3e3e;
+}
+.hero a:nth-of-type(1){background-color: #9dd0a8;
+}
+.project-card{background-color:#f9f9f9;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
+    margin-top: auto;
+}
+.project-card img{max-height: 180px;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.project-grid{display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+.project-title{margin-top: auto;
+    padding-bottom: .3em;
+    
+}
+.blog-grid{display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #dddddd;
+}
+.blog-post {
+  background-color: #f9f9f9;
+  border: 1px solid #dddddd;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+h1{color: #97b15f;
+    margin-bottom: .3em;
+}
+h4{color: #9dd0a8;
+    margin-bottom: .5em;
+}
+a{color: #7fc19b;
+}
+p{margin-top: 0;
+}
+footer{text-align: center;
+}
