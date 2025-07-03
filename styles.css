@@ -19,7 +19,13 @@ header{text-align: right;
 .nav-right a{margin-left: 1rem;
     text-decoration: none;
 }
-.nav-right a:first-of-type{border: 1px solid #ddd;
+body.home .nav-right a:first-of-type{border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: .27em;
+    background-color: #cccccc;
+    color: #5a9968;
+}
+body.aboutme .nav-right a:nth-of-type(2){border: 1px solid #ddd;
     border-radius: 4px;
     padding: .27em;
     background-color: #cccccc;
