@@ -31,6 +31,9 @@ body.aboutme .nav-right a:nth-of-type(2){border: 1px solid #ddd;
     background-color: #cccccc;
     color: #5a9968;
 }
+body.home .blog-post p{
+    font-size: small;
+}
 .hero{text-align: center;
     vertical-align: middle;
     padding: 10em;
