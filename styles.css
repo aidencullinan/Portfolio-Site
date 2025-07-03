@@ -31,6 +31,12 @@ body.aboutme .nav-right a:nth-of-type(2){border: 1px solid #ddd;
     background-color: #cccccc;
     color: #5a9968;
 }
+body.contact .nav-right a:nth-of-type(6){border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: .27em;
+    background-color: #cccccc;
+    color: #5a9968;
+}
 body.home .blog-post p{
     font-size: small;
 }
@@ -39,13 +45,17 @@ body.home .blog-post p{
     padding: 10em;
     border-bottom: 1px solid #dddddd;
 }
-.hero a{border: 1px solid #ddd;
+body.home .hero a{border: 1px solid #ddd;
     border-radius: 8px;
     padding: .4em;
     text-decoration: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     background-color: #97b15f;
     color: #3e3e3e;
+}
+body.contact .hero a{
+    text-decoration: none;
+    background-color: white;
 }
 .hero a:nth-of-type(1){background-color: #9dd0a8;
 }
