@@ -189,6 +189,69 @@ body.aboutme a {
     transition: transform 0.2s ease;
 }
 
+/* ========== Resume Page (Themed) ========== */
+.resume-section {
+  padding: 50px 20px;
+  background-color: #fafbf8; /* matches site background */
+  text-align: center;
+}
+
+.resume-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #97b15f; /* site header color */
+}
+
+.btn-download {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7fc19b; /* site accent */
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.btn-download:hover {
+  background-color: #65997b; /* darker accent on hover */
+}
+
+.resume-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  text-align: left;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.resume-block {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  border: 1px solid #dddddd;
+}
+
+.resume-block h3 {
+  font-size: 1.2rem;
+  color: #7fc19b; /* match labels and links */
+  margin-bottom: 10px;
+}
+
+.resume-block ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  color: #3e3e3e;
+}
+
+.resume-block p {
+  color: #3e3e3e;
+}
+
+
+
 /* ========== Footer ========== */
 footer {
     text-align: center;
