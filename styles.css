@@ -266,6 +266,70 @@ body.aboutme a {
   color: #3e3e3e;
 }
 
+/* ========== Blog Post Page ========== */
+.blog-post-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+}
+
+.blog-post-full {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+  font-size: 2.5rem;
+  color: #97b15f;
+  margin-bottom: 0.5rem;
+}
+
+.blog-subtitle {
+  font-size: 1.3rem;
+  color: #7fc19b;
+  margin-bottom: 1.2rem;
+}
+
+.blog-date {
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 1.5rem;
+}
+
+.blog-body p {
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+}
+
+.bibliography {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-left: 4px solid #9dd0a8;
+  border-radius: 6px;
+}
+
+.bibliography h4 {
+  margin-bottom: 1rem;
+  color: #7fc19b;
+}
+
+.bibliography ul {
+  padding-left: 1.2rem;
+}
+
+.bibliography li {
+  margin-bottom: 0.8rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.bibliography a {
+  color: #7fc19b;
+  text-decoration: underline;
+}
 
 
 /* ========== Footer ========== */
