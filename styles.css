@@ -202,20 +202,29 @@ body.aboutme a {
   color: #97b15f; /* site header color */
 }
 
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
 .btn-download {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #7fc19b; /* site accent */
+  background-color: #7fc19b;
   color: #fff;
   border-radius: 5px;
   text-decoration: none;
-  margin-bottom: 30px;
   font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .btn-download:hover {
-  background-color: #65997b; /* darker accent on hover */
+  background-color: #65997b;
 }
+
 
 .resume-grid {
   display: grid;
