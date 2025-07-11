@@ -90,6 +90,11 @@ body.contact .hero a {
     background-color: white;
 }
 
+.aboutme .hero, .contact .hero{
+    padding-left: 35%;
+    padding-right: 35%;
+}
+
 /* ========== Page Specific Styles ========== */
 body.home .blog-post p {
     font-size: small;
@@ -98,6 +103,7 @@ body.home .blog-post p {
 body.aboutme a {
     text-decoration: none;
 }
+
 
 /* ========== Contact Form ========== */
 .contact-form {
