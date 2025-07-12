@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aiden Cullinan | Portfolio</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body class="bloglibrary">
+        <header>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a>Portfolio Website</a>    
+                </div>
+                <div class="nav-right">
+                    <a href="../index.html">Home</a>
+                    <a href="../aboutme.html">About Me</a>
+                    <a href="../projectslibrary.html">Projects</a>
+                    <a href="../bloglibrary.html">Blog</a>
+                    <a href="../resume.html">Resume</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+        <main class="blog-post-container">
+            <article class="blog-post-full">
+            <h1 class="blog-title">Wireless Attacks on Self Driving Cars</h1>
+            <h3 class="blog-subtitle">How Relay Attacks, GPS Spoofing, and Sensor Hacks Are Challenging the Future of Autonomous Vehicles</h3>
+            <p class="blog-date">Posted on July 11, 2025</p>
+
+            <div class="blog-body">
+                <p>
+                Self-driving cars have become one of the most transformative technologies in the transportation sector. As advancements in artificial intelligence, sensor fusion, and wireless connectivity continue, autonomous vehicles are increasingly being tested and deployed in real-world environments. However, this reliance on wireless communication exposes these systems to a range of cyber threats. Wireless interfaces such as Bluetooth, Wi-Fi, GPS, and Vehicle-to-Everything (V2X) communications are essential for safe and efficient operation, but they also represent vulnerable entry points for attackers. The ability to exploit these interfaces remotely means that attacks on self-driving vehicles are not just hypothetical—they are already happening.
+                </p>
+                <p>
+                Autonomous vehicles use wireless technologies like Vehicle-to-Vehicle (V2V) and Vehicle-to-Infrastructure (V2I) communication to share data about location, speed, and driving intent. They also rely on GPS for navigation and positioning, and maintain internal systems through wireless protocols for diagnostics, updates, and user convenience features. Each of these communication channels introduces new risks. Spoofing, replay, jamming, and man-in-the-middle attacks can target these wireless systems, disrupting functionality or compromising safety. In particular, once an attacker gains access to these external channels, they can sometimes infiltrate the internal Controller Area Network (CAN bus), which controls vehicle functions like acceleration, braking, and steering.
+	            </p>
+                <p>
+                One real-world demonstration of such a vulnerability occurred when researchers at NCC Group successfully conducted a relay attack against a Tesla Model 3. Tesla’s Passive Keyless Entry (PKE) system relies on Bluetooth Low Energy (BLE) technology. A key fob or smartphone communicates with the car using BLE signals, and the vehicle unlocks automatically when the device is within a certain proximity. This convenience feature, however, became an attack vector. The researchers relayed BLE signals between the key fob and the vehicle, spoofing the signal strength and location data. Despite the BLE communications being encrypted, the attack was effective because it operated at the link layer, forwarding encrypted packets directly without decrypting them. The car was tricked into thinking the authorized device was nearby, and it unlocked without the owner's intent or knowledge. This case highlighted a major flaw in relying on Received Signal Strength Indicator (RSSI) for authentication, which can be spoofed. In response, experts recommend implementing Time-of-Flight (ToF) measurements to better estimate distance, tightening BLE timing parameters, and disabling passive entry features when the associated device is stationary.
+	            </p>
+                <p>
+                Another concerning vulnerability involves GPS spoofing. In 2019, cybersecurity firm Regulus Cyber conducted a series of GPS spoofing attacks on Tesla vehicles. Tesla’s Navigate on Autopilot (NOA) system integrates GPS data with other sensor inputs to guide autonomous driving decisions, such as lane changes and highway exits. Regulus was able to send false GPS signals that tricked the car into executing incorrect maneuvers. In one test, the spoofed data caused the vehicle to exit a highway early; in another, it forced the car to adhere to an incorrect speed limit. The researchers used commercially available software-defined radios and GPS simulation tools to execute these attacks. Despite Tesla’s use of sensor fusion, the false GPS data occasionally overrode other sensory inputs, revealing weaknesses in how the system prioritizes different data sources. Suggested mitigations include enhanced sensor fusion logic that cross-checks GPS with camera and radar data, the use of anti-spoofing GPS hardware with multi-antenna arrays, and stronger regulatory oversight that enforces spoofing-resistance in consumer vehicles.
+	            </p>
+                <p>
+                Securing autonomous vehicles against such attacks requires a combination of technical strategies and long-term policy planning. Encryption and authentication must be mandatory for all wireless communications, including V2X protocols. For example, using Transport Layer Security (TLS), WPA3 encryption, and digital certificates through IEEE 1609.2 ensures that only trusted devices can send and receive data. Redundancy is also key. Sensor fusion systems should not only combine data from multiple sources, but actively validate and reconcile discrepancies to detect possible spoofing or jamming. Over-the-air (OTA) updates are vital for maintaining the security of autonomous vehicle systems, allowing manufacturers to respond quickly to emerging threats or discovered vulnerabilities. More advanced approaches include using machine learning models to detect abnormal behavior, such as inconsistent sensor readings or communication anomalies that deviate from normal driving patterns. These models can act as real-time intrusion detection systems that flag and mitigate threats before damage occurs.
+	            </p>
+                <p>
+                Security testing is another crucial piece of the puzzle. Penetration testing and red teaming exercises, where ethical hackers simulate real-world attacks, are becoming standard practice in the automotive industry. By identifying vulnerabilities before malicious actors do, manufacturers can take proactive steps to secure their systems. Regulatory standards are also beginning to catch up. Frameworks such as ISO/SAE 21434 and UN Regulation No. 155 mandate that carmakers integrate cybersecurity throughout the vehicle development lifecycle and demonstrate the ability to detect and respond to attacks like spoofing and relay interference. As the international deployment of connected vehicles increases, cross-border regulatory cooperation will become essential to enforcing a consistent security baseline.
+	            </p>
+                <p>
+                Ultimately, the road to fully autonomous vehicles is not just paved with advancements in AI and robotics—it also requires a solid foundation of cybersecurity. Real-world incidents like the BLE relay attack and GPS spoofing test prove that these threats are immediate and credible. Trust in self-driving technology depends not only on its performance but on its safety and resilience against external manipulation. Public transparency around vulnerabilities, security patch timelines, and safety metrics will become increasingly important as adoption grows. The future of transportation will only be realized if we invest in cybersecurity with the same rigor as we do in automation.
+                </p>
+            </div>
+            </article>
+            <section class="bibliography">
+                <h4>Bibliography</h4>
+                <ul>
+                    <li>
+                    AuthorLast, First. <em>Title of Source</em>. Publisher, Year. 
+                    <a href="https://example.com" target="_blank">Link</a>
+                    </li>
+                    <li>
+                    Organization Name. "Page Title." <em>Website Name</em>, Date Published. 
+                    <a href="https://example.com" target="_blank">Link</a>
+                    </li>
+                    <!-- Add more list items as needed -->
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <h4>Aiden Cullinan</h4>
+            <div class="social-icons">
+                <a href="https://github.com/aidencullinan" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github fs-2x"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aidencullinan/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin fs-2x"></i>
+                </a>
+            </div>
+            <div class="email">
+                <a href="mailto:adcullin@asu.edu">adcullin@asu.edu</a>
+            </div>
+            <p>
+                <a href="../index.html">Home</a> |
+                <a href="../aboutme.html">About Me</a> | 
+                <a href="../contact.html">Contact</a> | 
+                <a href="../resume.html">Resume</a> | 
+                <a href="../projectslibrary.html">Projects</a> | 
+                <a href="../bloglibrary.html">Blog</a>
+            </p>
+        </footer>
+    </body>
+</html>
