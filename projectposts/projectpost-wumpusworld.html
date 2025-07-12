@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aiden Cullinan | Portfolio</title>
+        <link rel="stylesheet" href="../styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body class="bloglibrary">
+        <header>
+            <nav class="navbar">
+                <div class="nav-left">
+                    <a>Portfolio Website</a>    
+                </div>
+                <div class="nav-right">
+                    <a href="../index.html">Home</a>
+                    <a href="../aboutme.html">About Me</a>
+                    <a href="../projectslibrary.html">Projects</a>
+                    <a href="../bloglibrary.html">Blog</a>
+                    <a href="../resume.html">Resume</a>
+                    <a href="../contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+
+  <main class="project-container">
+    <!-- Banner Image -->
+    <div class="project-banner">
+      <img src="../images/project1image.jpg" alt="Project Banner">
+    </div>
+
+    <!-- Project Content -->
+    <article class="project-content">
+      <h1>Wumpus World Agent-Based Decision-Making System</h1>
+      <p class="subtitle">Expert System for the Wumpus World</p>
+      <section class="project-body">
+        <h2>Overview</h2>
+        <p>For our first project in Foundations of AI, we developed an intelligent agent that navigates the classic Wumpus World environment using expert system principles. Our implementation leverages a knowledge base (KB), environmental parsing, and logical reasoning to infer safe and dangerous zones in a 4x4 grid, aiming to retrieve gold while avoiding deadly pits and the lurking Wumpus.</p>
+        <h2>Project Goals</h2>
+        <p>
+          <ul>
+            <li>Implement a rule-based expert system to reason about sensory data (breeze, stench, glitter).</li>
+            <li>Simulate agent decision-making between safe, uncertain, and risky moves.</li>
+            <li>Design a knowledge base system (kb.txt) to log movement, inference rules, and game outcomes.</li>
+            <li>Allow users to query the agent’s knowledge of specific chambers in the grid.</li>
+            <li>Track logical deductions and probabilities for pit/Wumpus presence based on prior observations.</li>
+          </ul>
+        </p>
+        <h2>Key Features</h2>
+        <h4>Environment Setup</h4>
+        <ul>
+          <li>Parses maps from testworld.txt, testworld2.txt, or testworld3.txt.</li>
+          <li>Dynamically places Wumpus, gold, and pits in a 4x4 grid using input files.</li>
+        </ul>
+        <h4>Knowledge-Based Agent</h4>
+        <p>Sensors: Detects breeze, stench, glitter, gold, pit, and Wumpus.</p>
+        <p>Logical Inference:</p>
+          <ul>
+            <li>Breeze → Pit nearby</li>
+            <li>Stench → Wumpus nearby</li>
+            <li>No breeze/stench → Safe adjacent rooms</li>
+          </ul>
+          <p>Decision Models:</p>
+          <ul>
+            <li>startAgent_random() – random movement (baseline)</li>
+            <li>startAgent_expert_v1() – logic-driven movement based on KB</li>
+          </ul>
+        <h4>Logging and Analysis</h4>
+          <ul>
+            <li>Tracks agent's movements, deaths, and wins in the KB file.</li>
+            <li>Logs deductive reasoning for each move.</li>
+            <li>Exports current world state and agent knowledge for debugging or review.</li>
+          </ul>
+        <h4>Interactivity</h4>
+          <ul>
+            <li>Users can test the agent’s memory by querying chamber safety.</li>
+            <li>Responds with status: SAFE, Breeze detected, Stench detected, or UNKNOWN.</li>
+          </ul>
+        <h2>Sample Agent Behavior</h2>
+          <ul>
+            <li>Begins at (1,1) (safe zone).</li>
+            <li>Checks for breeze or stench.</li>
+            <li>If safe, chooses a move based on safety hierarchy:</li>
+            <li>If no safe moves, reroutes to a known safe cell or makes a risky decision.</li>
+          </ul>
+        <h2>Sample Output</h2>
+        <p>
+          Agent moves right<br>
+          Sensor: {Breeze: true, Stench: false, ...}<br>
+          Logical Conclusion: Breeze detected, there must be a pit nearby.<br>
+          Logical Conclusion: No stench detected, no nearby Wumpus.<br>
+          Logical Conclusion: No safe moves, risky decision required.<br>
+          Agent moves down<br>
+          ...<br>
+          Agent found the Gold! Glittery room, and objective achieved!
+        </p>
+        <h2>Conclusion</h2>
+        <p>This project deepened our understanding of how expert systems simulate intelligence using logic, inference, and environmental sensing. By representing knowledge as rules and facts, we designed a flexible and scalable agent that can safely traverse the dangers of the Wumpus World.</p>
+      </section>
+
+      <!-- Resources Used -->
+      <section class="project-resources">
+        <h4>Resources Used</h4>
+        <ul>
+          <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+          <li><a href="https://reactjs.org/" target="_blank">React Documentation</a></li>
+          <li><a href="https://github.com/aidencullinan/project-repo" target="_blank">Project GitHub Repository</a></li>
+        </ul>
+      </section>
+    </article>
+  </main>
+  <footer>
+        <h4>Aiden Cullinan</h4>
+        <div class="social-icons">
+            <a href="https://github.com/aidencullinan" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github fs-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/aidencullinan/" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin fs-2x"></i>
+            </a>
+        </div>
+        <div class="email">
+            <a href="mailto:adcullin@asu.edu">adcullin@asu.edu</a>
+        </div>
+        <p>
+            <a href="../index.html">Home</a> |
+            <a href="../aboutme.html">About Me</a> | 
+            <a href="../contact.html">Contact</a> | 
+            <a href="../resume.html">Resume</a> | 
+            <a href="../projectslibrary.html">Projects</a> | 
+            <a href="../bloglibrary.html">Blog</a>
+        </p>
+    </footer>
+</body>
+</html>
