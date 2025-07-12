@@ -266,6 +266,55 @@ body.aboutme a {
   color: #3e3e3e;
 }
 
+/* ========== Project Post Page ========== */
+
+.project-banner img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-bottom: 2px solid #dddddd;
+}
+
+.project-content {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  color: #333;
+}
+
+.project-content h1 {
+  color: #97b15f;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-content .subtitle {
+  color: #7fc19b;
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.project-body {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.project-resources h4 {
+  color: #7fc19b;
+  margin-bottom: 1rem;
+}
+
+.project-resources ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.project-resources a {
+  color: #7fc19b;
+  text-decoration: underline;
+}
+
+
 /* ========== Blog Post Page ========== */
 .blog-post-container {
   max-width: 800px;
